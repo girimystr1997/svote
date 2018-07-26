@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>vote</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  
+<!-- Mixins-->
+<!-- Pen Title-->
+<br>
+<div class="container">
+  <div class="card"></div>
+  <div class="card"> 
+    <h1 class="title">got<br>Aadhar</h1>
+    <p class="pen-title">
+       Dont have an Aadhar! click pen icon</p><br>
+    <form action="validate.jsp">
+      <div class="input-container">
+          <input type="#{type}" id="#{label}" required="required" name="aadhar"/>
+        <label for="#{label}">Aadhar no</label>
+        <div class="bar"></div>
+      </div>
+      <div class="button-container">
+            <button><span>vote</span></button>
+      </div>
+    </form>
+  </div>
+  <div class="card alt">
+    <div class="toggle"></div>
+    <h1 class="title">select<br>proof
+      <div class="close"></div>
+    </h1>
+    <br><br><br><br><br><br><br><br><br>
+    <form action="validate.jsp">
+      <div class="input-container">  
+          <input type="#{type}" id="#{label}" list="proof" required="required" name="voterid"/>
+        <label for="#{label}">&nbsp Enter Any Proof Number</label>    
+        <div class="bar"></div>
+      </div>
+      
+      <div class="button-container">
+        <button><span>vote</span></button>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="pen-title">
+    <h1>my vote,my right!</h1>
+  </div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
