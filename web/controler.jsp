@@ -71,9 +71,7 @@ if(!(cong==null)){
                 out.println(e);
                 }
 }
-           }
-           else{
-           if(!(bjp ==null)) {
+          if(!(bjp ==null)) {
             try{
                 session.setAttribute("voted", bjp);
                 Class.forName("com.mysql.jdbc.Driver").newInstance();
@@ -110,10 +108,8 @@ if(!(cong==null)){
             }catch(Exception e){
                 out.println(e);
                 }
-}    
-    
-            
 }
+           }
        
         %>
     </body>
